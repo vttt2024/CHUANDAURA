@@ -1,0 +1,274 @@
+/* Reset CSS cơ bản để tránh xung đột */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Toàn bộ trang web */
+body {
+  font-size: medium;
+  margin-top: 50px;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  color: #333; 
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header - Các phần nền */
+.v1_2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.v3_313 {
+  text-align: center; 
+}
+/* Các section với hình ảnh */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* Các phần tử với kích thước cụ thể */
+.v1_3 {
+  width: 160px;
+  height: 180px;
+  background: url("images/v1_3.png") no-repeat center center;
+}/* Các liên kết trong menu điều hướng */
+/* Định dạng cho phần điều hướng */
+nav.v37_20 {
+  background: url("images/v37_20.png") no-repeat center center;
+  background-size: cover;
+  padding: 10px 0;
+  margin: 0; /* Xóa margin */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Menu chiếm hết chiều rộng */
+  height: 60px; /* Đặt chiều cao menu */
+  z-index: 1000; /* Đảm bảo menu luôn ở trên các phần khác */
+}
+
+/* Đảm bảo phần nội dung bên dưới không bị che khuất bởi menu */
+body {
+  padding-top: 60px; /* Điều chỉnh khoảng cách phía trên body để tránh menu che khuất */
+}
+nav.v37_20 a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.3s ease;
+  line-height: 60px;
+}
+
+/* Khi hover các liên kết */
+nav.v37_20 a:hover {
+  color: #ff9800; /* Màu chữ khi hover */
+}
+
+/* Chỉnh sửa ảnh nền và chiều cao */
+nav.v37_20 {
+  background-color: #777; /* Tạm thời thay ảnh nền bằng màu */
+}
+
+
+.v3_165, .v3_133 {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; /* Căn giữa */
+  margin: 10px 0;
+}
+
+
+
+/*anh tui*/
+.container {
+  display: flex;               /* Sử dụng Flexbox để chia 2 cột */
+  justify-content: space-between; /* Căn đều khoảng cách giữa 2 nhóm */
+  gap: 20px;                   /* Khoảng cách giữa 2 nhóm */
+  flex-wrap: wrap;             /* Cho phép các phần tử xuống dòng nếu cần */
+  padding: 20px;
+}
+
+/* Nhóm túi vải bố */
+.canvas-bags {
+  flex: 1;                     /* Cho phép nhóm này chiếm 50% chiều rộng */
+  padding: 20px;
+  
+}
+
+/* Nhóm túi vải không dệt */
+.non-woven-bags {
+  flex: 1;                     /* Cho phép nhóm này chiếm 50% chiều rộng */
+  padding: 20px;
+}
+
+/* Cấu hình Grid cho các phần tử trong từng nhóm */
+.canvas-bags, .non-woven-bags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Mỗi nhóm có 4 cột */
+  gap: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+.canvas-bags section, .non-woven-bags section {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #00796b; /* Viền dày 5px với màu #4CAF50 */
+  padding: 10px; /* Khoảng cách giữa viền và nội dung ảnh */
+  border-radius: 8px; /* Bo góc cho phần tử */
+}
+
+.canvas-bags .v3_217 { background-image: url("images/v3_217.png"); }
+.canvas-bags .v3_218 { background-image: url("images/v3_218.png"); }
+.canvas-bags .v3_219 { background-image: url("images/v3_219.png"); }
+.canvas-bags .v3_220 { background-image: url("images/v3_220.png"); }
+.canvas-bags .v3_221 { background-image: url("images/v3_221.png"); }
+.canvas-bags .v3_222 { background-image: url("images/v3_222.png"); }
+
+.non-woven-bags .v3_226 { background-image: url("images/v3_226.png"); }
+.non-woven-bags .v3_227 { background-image: url("images/v3_227.png"); }
+.non-woven-bags .v3_228 { background-image: url("images/v3_228.png"); }
+.non-woven-bags .v3_229 { background-image: url("images/v3_229.png"); }
+.non-woven-bags .v3_230 { background-image: url("images/v3_230.png"); }
+.non-woven-bags .v3_231 { background-image: url("images/v3_231.png"); }
+
+
+/* Định dạng cho các đoạn văn bản */
+.v3_165 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center; 
+}
+
+.v3_170, .v3_171, .v3_172 {
+  background-color: #9fc7ba69; /* Màu nền với độ trong suốt */
+  font-size: 16px;
+  padding: 5px 10px; /* Tạo khoảng cách giữa nền và chữ */
+  margin-bottom: 10px;
+  display: inline-block; /* Để chữ không chiếm full chiều ngang */
+  border-radius: 4px; /* Tạo bo góc cho phần nền */
+}
+
+
+.container {
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các phần tử */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa hai phần tử */
+}
+
+.v3_213, .v3_223 {
+  flex: 1; /* Mỗi phần tử chiếm một nửa chiều rộng */
+  text-align: center; /* Căn giữa chữ trong mỗi cột */
+  background-color: #e0f7fa; /* Màu nền để dễ nhìn */
+  padding: 20px;
+  font-size: 18px;
+  color: #00796b;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Chính sách và thông tin liên hệ */
+.v3_237, .v3_238, .v3_234 {
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+/* Định dạng cho container bao bọc 2 nhóm */
+.design-container {
+  display: flex;
+  justify-content: space-between; /* Chia khoảng cách đều giữa 2 nhóm */
+  margin: 20px 0;
+}
+
+/* Định dạng cho mỗi nhóm */
+.design-group {
+  display: flex;
+  flex-direction: column; /* Đặt các phần tử trong nhóm theo cột */
+  align-items: center;
+  text-align: center;
+  width: 48%; /* Mỗi nhóm chiếm 48% chiều ngang của container */
+}
+
+.design-group p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Tăng kích thước của phần tử section */
+.design-group section {
+  width: 100%; 
+  height: 250px; /* Tăng chiều cao lên 250px */
+  background-color: #dcdcdc; /* Màu nền để dễ nhìn */
+  margin-bottom: 10px;
+}
+
+/* Các phần section có thể có hình nền, thay đổi theo nhu cầu */
+.v26_340 {
+  background: url("images/v26_340.png") no-repeat center center;
+  background-size: cover; /* Đảm bảo ảnh được cắt vừa với size của phần tử */
+}
+
+.v26_341 {
+  background: url("images/v26_341.png") no-repeat center center;
+  background-size: cover;
+}
+
+.v26_361 {
+  background: url("images/v26_361.png") no-repeat center center;
+  background-size: cover;
+}
+
+.v26_363 {
+  background: url("images/v26_363.png") no-repeat center center;
+  background-size: cover;
+}
+
+.contact-info {
+  background-color: #9fc7ba69; 
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ */
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+.contact-info p {
+  color: #333; /* Màu chữ tối cho dễ đọc */
+  line-height: 1.6; /* Giãn dòng cho dễ đọc */
+  margin-bottom: 10px;
+}
+
+.v3_237 {
+  font-weight: bold;
+  color: #00796b; /* Màu xanh lá đậm cho tiêu đề */
+}
+
+.v3_238 {
+  font-weight: normal;
+  color: #00796b; /* Màu xanh lá đậm */
+}
+
+.v3_234 {
+  font-size: 16px;
+  color: #555; /* Màu chữ nhẹ nhàng, dễ đọc */
+  margin-top: 15px;
+}

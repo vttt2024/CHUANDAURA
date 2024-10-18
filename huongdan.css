@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Toàn bộ trang web */
+body {  margin-top: 50px;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  color: #333; 
+  line-height: 1.6;
+  padding: 20px;
+  font-size: medium;
+}
+nav.v37_20 {
+  background: url("images/v37_20.png") no-repeat center center;
+  background-size: cover;
+  padding: 10px 0;
+  margin: 0; /* Xóa margin */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Menu chiếm hết chiều rộng */
+  height: 60px; /* Đặt chiều cao menu */
+  z-index: 1000; /* Đảm bảo menu luôn ở trên các phần khác */
+}
+
+/* Đảm bảo phần nội dung bên dưới không bị che khuất bởi menu */
+body {
+  padding-top: 60px; /* Điều chỉnh khoảng cách phía trên body để tránh menu che khuất */
+}
+nav.v37_20 a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.3s ease;
+  line-height: 60px;
+}
+
+/* Khi hover các liên kết */
+nav.v37_20 a:hover {
+  color: #ff9800; /* Màu chữ khi hover */
+}
+
+/* Chỉnh sửa ảnh nền và chiều cao */
+nav.v37_20 {
+  background-color: #777; /* Tạm thời thay ảnh nền bằng màu */
+}
+
+
+.footer {
+  display: flex;               /* Sử dụng Flexbox để chia 2 cột */
+  justify-content: space-between; /* Căn đều khoảng cách giữa 2 nhóm */
+  gap: 20px;                   /* Khoảng cách giữa 2 nhóm */
+  flex-wrap: wrap;             /* Cho phép các phần tử xuống dòng nếu cần */
+  padding: 20px;
+  background-color: #9fc7ba69; 
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ */
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+.footer p {
+  color: #333; /* Màu chữ tối cho dễ đọc */
+  line-height: 1.6; /* Giãn dòng cho dễ đọc */
+  margin-bottom: 10px;
+}
+.thongtin {
+  flex: 1;                   
+  padding: 20px;
+  
+}
+
+.chinhsach {
+  flex: 1;                    
+  padding: 20px;
+}
+
+/* Thông tin công ty */
+.thong-tin-cong-ty {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thong-tin-cong-ty strong {
+  font-size: 18px;
+}
+
+.thong-tin-cong-ty a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.thong-tin-cong-ty a:hover {
+  text-decoration: underline;
+}
+
+/* Điều chỉnh cho responsive */
+@media (max-width: 768px) {
+  .thanh-dieu-huong {
+      flex-direction: column;
+  }
+
+  .thanh-dieu-huong a {
+      padding: 10px;
+  }
+
+  .footer-nav {
+      flex-direction: column;
+  }
+
+  .footer-nav-item {
+      margin-bottom: 10px;
+  }
+
+  .chi-tiet-dich-vu,
+  .chinh-sach,
+  .bao-gia,
+  .thong-tin-cong-ty {
+      padding: 15px;
+  }
+}
